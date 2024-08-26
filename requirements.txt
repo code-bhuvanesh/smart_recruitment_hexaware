@@ -4,3 +4,5 @@ langchain-core
 langchain-google-genai
 grpcio
 streamlit
+langchain-community
+pypdf

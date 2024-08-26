@@ -12,7 +12,7 @@ job_description = st.text_area("Job Description")
 skills_required = st.text_area("Skills Required")
 
 # Check if a file has been uploaded
-if resume_pdf is not None:
+if resume_pdf is not None and job_description != "" and skills_required != "":
     with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp_file:
         tmp_file.write(resume_pdf.read())
         temp_file_path = tmp_file.name
