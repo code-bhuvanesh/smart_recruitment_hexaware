@@ -4,7 +4,7 @@ import tempfile
 import os
 from resume_analyzer import ResumeAnalyzer
 # Title of the app
-st.title("PDF File Uploader")
+st.title("Resume Analyzer")
 
 # File uploader for PDFs
 resume_pdf = st.file_uploader("Choose a PDF file", type="pdf")
