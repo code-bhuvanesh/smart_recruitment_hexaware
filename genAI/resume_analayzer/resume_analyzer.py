@@ -11,7 +11,7 @@ class ResumeAnalyzer():
     def __init__(self):
         load_dotenv()
         api_key = os.getenv("GOOGLE_API_KEY")
-        llm = GoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=self.api_key)
+        llm = GoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=api_key)
 
         prompt_template = PromptTemplate(
             input_variables=["resume_text", "job_description", "required_skills"],
