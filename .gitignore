@@ -5,9 +5,21 @@
 __pycache__/
 
 
-
-
-
 # Environments
 .env
 .venv
+*.env
+*.env.example
+*.env.local
+*.env.staging
+
+/vars
+
+.env.development
+
+.env.production
+
+**/*.env.development
+
+get-pip.py
+
