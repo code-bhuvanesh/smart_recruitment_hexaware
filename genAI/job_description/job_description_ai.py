@@ -14,7 +14,6 @@ today_date = datetime.now()
 deadline_date = today_date + timedelta(days=7)
 formatted_deadline = deadline_date.strftime("%d/%m/%Y")
 
-
 def generate_job_description(msg):
     messages = [
         SystemMessage(content=f"Generate a job description for the following in JSON format only. Job Title, Job Description,Department, Job Location, Employment Type,Salary Range (starting with 'RS'), Application Deadline (use {formatted_deadline} in DD/MM/YYYY format), Required Qualifications, Preferred Qualifications, Responsibilities. Do not include json word at beggining."),
