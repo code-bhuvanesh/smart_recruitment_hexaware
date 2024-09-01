@@ -8,8 +8,8 @@ st.title("Resume Analyzer")
 
 # File uploader for PDFs
 resume_pdf = st.file_uploader("Choose a PDF file", type="pdf")
+skills_required = st.text_input("Skills Required")
 job_description = st.text_area("Job Description")
-skills_required = st.text_area("Skills Required")
 
 if st.button("analyze"):
 
@@ -31,15 +31,19 @@ if st.button("analyze"):
         result = resumeAnalyzer.analyze(pages[0].page_content, job_description, skills_required)
 
         analyzing.empty()
-
+        total_score = 0
         for k in result.keys():
-            st.subheader(f"{k} : {result[k]}/10")
+            st.write(f"{k} : {result[k]}/10")
+            total_score += result[k]
+        
+        st.write(f"total score : {total_score/4}/10")
 
         # Clean up the temporary file if needed
         os.remove(temp_file_path)
 
     else:
         st.write("Please upload a PDF file to analyze.")
+
 test = '''
 We are looking for a senior Software Engineer with experience in Python, Django, and React.js.
 The ideal candidate should have at least 50 years of experience in software development, 
