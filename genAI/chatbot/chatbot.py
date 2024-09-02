@@ -1,7 +1,7 @@
 # chatbot.py
 
 from langchain_google_genai import GoogleGenerativeAI
-from data import get_applicant_data, get_job_description, update_application_status
+from chatbot.data import get_applicant_data, get_job_description, update_application_status
 import os
 from dotenv import load_dotenv
 

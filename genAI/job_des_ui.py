@@ -1,6 +1,8 @@
 import streamlit as st
-from job_description.job_description_ai import generate_job_description
+# from genai.job_description.job_description_ai import generate_job_description
 import json
+
+from job_description.job_description_ai import generate_job_description
 
 def jobDescriptionApp():
     st.title("Job Description Prompt")

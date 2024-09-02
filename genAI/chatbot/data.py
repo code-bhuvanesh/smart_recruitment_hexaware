@@ -24,7 +24,7 @@ applicant_data = {
         "name": "John Doe",
         "email": "john.doe@example.com",
         "applied_job": "flutter_developer",
-        "application_status": "Under Review"
+        "application_status": "Interview Scheduled"
     },
     "user_2": {
         "name": "Jane Smith",

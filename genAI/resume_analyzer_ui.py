@@ -2,6 +2,8 @@ import streamlit as st
 from langchain.document_loaders import PyPDFLoader
 import tempfile
 import os
+
+# from resume_analayzer.resume_analyzer import ResumeAnalyzer
 from resume_analayzer.resume_analyzer import ResumeAnalyzer
 
 def resumeAnlayzerApp():
