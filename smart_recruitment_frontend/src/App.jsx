@@ -8,16 +8,17 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    // <div className="app">
+     // <div className="app">
     //   {/* <Sidebar />
     //   <Dashboard /> */}
    
     // </div>
     <Router>
+      <Sidebar />
       <Routes>
-        <Route path='/'element={<Dashboard/>}/>
-        <Route path="/login" element={<LoginPage/>}/>
-        <Route path="/register" element={<Register/>}/>
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );

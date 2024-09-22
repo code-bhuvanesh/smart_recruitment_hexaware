@@ -1,14 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Sidebar() {
   return (
     <div className="sidebar">
-      <h3>Applicant login -HR</h3>
+      <h3>Applicant login - HR</h3>
       <ul>
-        <li>Dashboard</li>
-        <li>Job Creation</li>
-        <li>Applications</li>
-        <li>Forms</li>
+        <li>
+          <Link to="/dashboard">Dashboard</Link>
+        </li>
+        <li>
+          <Link to="/job-creation">Job Creation</Link>
+        </li>
+        <li>
+          <Link to="/applications">Applications</Link>
+        </li>
+        <li>
+          <Link to="/forms">Forms</Link>
+        </li>
       </ul>
       <button className="logout-btn">Log Out</button>
     </div>
