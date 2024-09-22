@@ -1,6 +1,6 @@
-import React from 'react';
-import './LoginPage.css';
-import {Link} from 'react-router-dom';
+import React from "react";
+import "./LoginPage.css";
+import { Link } from "react-router-dom";
 
 const LoginPage = () => {
   return (
@@ -39,13 +39,14 @@ const LoginPage = () => {
             <label htmlFor="rememberMe">Remember me</label>
           </div>
           <div className="form-group">
-            <button type="submit" id="loginBtn">Login</button>
+            <button type="submit" id="loginBtn">
+              Login
+            </button>
           </div>
           <div className="form-links">
             <a href="/forgot-password">Forgot password?</a>
             <br />
             <Link to="/register">Go to Register</Link>
-           
           </div>
         </form>
       </div>
